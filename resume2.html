@@ -1,0 +1,351 @@
+<html>
+    <head>
+        <style>
+            *{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+   box-sizing:border-box;
+  font-family:arial,thoma;
+}
+
+/*start main*/
+.container{display:flex;}
+
+/*end main*/
+
+/*start header*/
+header{background-image:url('http://www.edencreative.co.uk/wp-content/uploads/2015/09/eden-header-mac.jpg');background-size:cover;}
+header .slider{color:#fff;text-align:center;padding:12% 35%;align-items:center;background-color:rgba(0,0,0,0.4);}
+header .slider h1{margin:0;border-top:2px #fff solid;border-bottom:2px #fff solid;text-transform:uppercase;font-size:50px;padding:2% 0;margin-bottom:5%;}
+header .slider button{padding:2% 8%;background-color:#fff;color:#fff;border-radius:5%;background:none;border:1px #fff solid;}
+header .navbar{display:flex;background-color:#575973;color:#fff;justify-content:space-between;padding:0 10%;align-items:center;}
+header .navbar h2{cursor:pointer;text-transform:uppercase;}
+header .navbar span:first-of-type{background-color:#999;padding:3% 5%;margin-right:10%;border:5px #888 solid;border-radius:5%;}
+header .navbar span:last-of-type{color:#93FF3E;}
+header .navbar ul{list-style:none;display:flex;text-transform:capitalize;}
+header .navbar ul li{padding:10px 10px;}
+header .navbar ul li a{text-decoration:none;color:#fff;}
+header .navbar ul li a:hover{color:#93FF3E;border-top:1px #93FF3E solid;}
+
+/*end header*/
+
+/*start featchres*/
+.featchres{display:flex;padding:3% 10%;animation:opfeat 2s ease-in-out; animation-delay:1s;}
+.featchres .feat{}
+.featchres .feat h3{text-transform:uppercase;color:#333;}
+.featchres .feat p{color:#444;width:90%;}
+/*end featchres*/
+
+/*start about-me*/
+.about-me{display:flex;padding:0 10%;background-color:#eee;}
+.about-me img{width:100%;border:5px #ddd solid;border-radius:5px;animation:trans2 1.5s ease-in-out;animation-delay:1s;}
+.about-me .about{padding-left:5%;background-color:#CAE8A9;border-radius:80% 0% 80% 0%;animation:trans1 1.5s ease-in-out;animation-delay:1s;}
+.about-me .about h2{text-transform:uppercase;color:#333;}
+.about-me .about p{color:#444;}
+.about-me .about p:first-of-type{line-height:1.5;padding-bottom:3%;}
+.about-me .about p:nth-of-type(2){line-height:1.5;padding-bottom:3%;}
+.about-me .about .p4{display:flex;}
+.about-me .about .p4 .t1{display:flex;}
+.about-me .about .p4 .t1 .icon{}
+.about-me .about .p4 .t1 .icon .fas{color:#080;position:relative;top:15%;}
+.about-me .about .p4 .t1 .info3{margin-left:5%;}
+.about-me .about .p4 .t1 .info3 h3{text-transform:uppercase;color:#333;}
+/*end about-me*/
+
+/*start myskills*/
+.myskills{display:flex;padding:5% 10%;}
+.myskills .info-myskills{width:50%}
+.myskills .info-myskills h2{text-transform:uppercase;color:#333;}
+.myskills .info-myskills p{color:#444;line-height:1.5;padding-bottom:3%;}
+.myskills .info-myskills button{padding:2% 5%;background-color:#080;color:#080;border-radius:5%;background:none;border:1px #080 solid;text-transform:uppercase;}
+.myskills .lang-skills{width:50%;margin-left:10%;margin-top:2%;}
+.myskills .lang-skills h4{color:#333;text-transform:uppercase;}
+.myskills .lang-skills section{background-color:#ddd;border-radius:5px;}
+.myskills .lang-skills span{background-color:#080;color:#fff;font-weight:bold;display:block;border-radius:5px;text-align:right;padding:1% 3% 1% 0;animation:web-design 2s ease-in-out;animation-delay:3s;}
+/*end myskills*/
+
+/*start resume*/
+.resume{padding:5% 10%;text-align:center;background-color:#eee;animation:trans3 1.5s ease-in-out;animation-delay:4s;}
+.resume h2{text-transform:uppercase;color:#333;}
+.resume p{color:#444;margin-bottom:2%;}
+.resume button{padding:0.8% 3%;background-color:#080;color:#080;border-radius:5%;background:none;border:1px #080 solid;text-transform:uppercase;}
+/*end resume*/
+
+/*start testimonials*/
+.testimonials{padding:5% 10%;}
+.testimonials .box-test{display:flex;}
+.testimonials  hr{margin:5% 0;border:2px #ccc solid;border-radius:3%;}
+.testimonials .box-test .my-education{width:50%;animation:trans2 1.5s ease-in-out;animation-delay:6s;}
+.testimonials .box-test .my-education h2{text-transform:uppercase;color:#333;}
+.testimonials .box-test .my-education p{color:#444;line-height:1.5;margin-bottom:5%;}
+.testimonials .box-test .diploma{width:50%;animation:trans1 1.5s ease-in-out;animation-delay:6s;}
+.testimonials .box-test .diploma .info-diploma{padding:5% 0 0% 10%;}
+.testimonials .box-test .diploma .info-diploma h3{text-transform:uppercase;margin-bottom:0;color:#333;}
+.testimonials .box-test .diploma .info-diploma h5{margin-top:1%;margin-bottom:3%;color:#333;}
+.testimonials .box-test .diploma .info-diploma span{background-color:#080;color:#fff;padding:0.8% 2%;border-radius:5%;}
+.testimonials .box-test .diploma .info-diploma hr{margin-top:5%;border:2px #ccc solid;border-radius:3%;}
+.testimonials .box-test .diploma .info-diploma p{color:#444;line-height:1.5;}
+/*end testimonials*/
+
+/*start stone*/
+.stone{padding:3% 5%;text-align:center;background-color:#eee;}
+.stone p{color:#444;line-height:1.4;animation:trans3 1.5s ease-in-out;animation-delay:10s;}
+.stone h2{color:#333;font-size:20px;margin-bottom:0;margin-bottom:3%;animation:trans3 1.5s ease-in-out;animation-delay:10s;}
+.stone .wd{width:15%;height:20%;position:relative;margin:auto;margin-left:45%;}
+.stone .wd span{width:10px;height:5px;background-color:#080;position:absolute;animation:reaction 2.5s infinite ease-in-out;display:block;bottom:0;}
+.stone .wd span:first-of-type{left:10%;animation-delay:.6s;}
+.stone .wd span:nth-of-type(2){left:20%;animation-delay:.7s;}
+.stone .wd span:nth-of-type(3){left:30%;animation-delay:.8s;}
+.stone .wd span:nth-of-type(4){left:40%;animation-delay:.9s;}
+.stone .wd span:last-of-type{left:50%;animation-delay:1s;}
+
+@keyframes reaction{
+	0%,50%,100%{background-color:#62CF2B;transform:translatey(0px);height:0;}
+	25%{height:30px;transform:translatey(15px);background-color:#54B325;}
+}
+/*end stone*/
+
+/*start portfolo*/
+.portfolo{padding:5% 10%;}
+.portfolo .info-portfolo{text-align:center;animation:trans2 1.5s ease-in-out;animation-delay:12s;}
+.portfolo .info-portfolo h2{text-transform:uppercase;color:#333;}
+.portfolo .info-portfolo p{color:#444;line-height:1.5;margin-bottom:10%;}
+.portfolo .photo-cv{display:flex;flex-wrap:wrap;}
+.portfolo .photo-cv .photo1{width:33.3333%;animation:trans1 1.5s ease-in-out;animation-delay:12s;}
+.portfolo .photo-cv .photo1 img{width:80%;border:5px #ddd solid;padding:3px;border-radius:5%;}
+.portfolo .photo-cv .photo1 p{color:#444;width:80%;}
+/*end portfolo*/
+
+/*start contact-me*/
+.contact-me{display:flex;padding:3% 10%;background-color:#2D2E2E;}
+.contact-me .info-contact{width:50%;color:#999;animation:trans2 1.5s ease-in-out;animation-delay:14s;}
+.contact-me .info-contact h3{color:#eee;text-transform:uppercase;}
+.contact-me .info-contact p{line-height:1.4;}
+.contact-me .info-contact label{display:block;padding-bottom:3%;}
+.contact-me .info-contact span{color:#eee;text-transform:capitalize;}
+.contact-me .in-form{width:50%;margin-left:20%;animation:trans1 1.5s ease-in-out;animation-delay:14s;}
+.contact-me .in-form label{display:block;color:#eee;text-transform:capitalize;}
+.contact-me .in-form input:nth-of-type(1){background-color:#999;border:1px #999 solid;width:80%;border-radius:5px;color:#eee;height:30px;margin-bottom:5%;margin-top:3%;}
+.contact-me .in-form input:nth-of-type(2){background-color:#999;border:1px #999 solid;width:80%;border-radius:5px;color:#eee;height:30px;margin-bottom:5%;margin-top:3%;}
+.contact-me .in-form textarea{resize:none;display:block;width:80%;height:200px;background-color:#999;border:1px #999 solid;color:#eee;margin-bottom:5%;margin-top:3%;border-radius:5%;}
+.contact-me .in-form input:nth-of-type(3){background-color:#000;color:#fff;border:0;padding:2% 4%;text-transform:uppercase;border-radius:5px;}
+.contact-me .in-form input:nth-of-type(3):hover{color:#fff;border:1px #000 solid;background:none;}
+/*end contact-me*/
+
+/*start footer*/
+footer{text-align:center;background-color:#333;padding:1% 10%;}
+footer p{margin:0;text-transform:uppercase;color:#888;margin-bottom:2%;}
+footer .fab{margin-left:1%;color:#999;opacity:0.3;}
+footer .fab:hover{opacity:1;}
+/*end footer*/
+@keyframes web-design{
+  0%{width:0%;}
+  20%{width:20%;}
+  40%{width:40%;}
+  80%{width:80%;}
+  100%{width:90%;}
+}
+@keyframes opfeat{
+  0%,20% ,40%{opacity:0;}
+
+  80%,100%{opacity:1;}
+
+
+}
+@keyframes trans1{
+  0%,20% ,40%{transform:translatex(500px);opacity:0.5;}
+
+  80%,100%{transform:translatex(0px);opacity:1;}
+
+
+}
+@keyframes trans2{
+  0%,20% ,40%{transform:translatex(-500px);opacity:0.5;}
+
+  80%,100%{transform:translatex(0px);opacity:1;}
+
+
+}
+@keyframes trans3{
+  0% ,100%{transform:translatey(0px);transform-origin:bottom;opacity:1}
+ 20%{transform:translatey(-50px);transform-origin:bottom;opacity:0;}
+  40%{transform:translatey(50px);transform-origin:bottom;opacity:0;}
+  80%{transform:translatey(-50px);transform-origin:bottom;}
+    90%{transform:translatey(50px);transform-origin:bottom;}
+
+
+
+}
+
+
+        </style>
+    </head>
+    <body>
+        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>focal</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+ <!--start header-->
+   <header>
+     <article class="slider">
+       <h1>kolla. om vivek</h1>
+       <button>know more</button>
+     </article>
+     <article class="navbar">
+         <h2><span>k</span><span>vi</span>vek</h2>
+
+         <ul>
+           <li><a href="#">home</a>
+           <li><a href="#">about me</a>
+           <li><a href="#">skills</a>
+           <li><a href="#">contact me</a>
+         </ul>
+
+     </article>
+   </header>
+ <!--end header-->
+
+ <!--start featchres-->
+  <article class="featchres">
+    
+  </article>
+ <!--end featchres-->
+
+ <!--start about-me-->
+  <article class="about-me">
+   <img src="https://roborr.net/wp-content/uploads/2018/08/dont-hire-web-designer-sm.jpg" alt="">
+   <section class="about">
+     <h2>about me</h2>
+     <p>Kolla om Vivek </p>
+     <p> interested in Python Developer, Wed Development, Mobile Application Development</p>
+     <p>Engineering Undergraduate currently pursuing a Bachelor's Degree.</p>
+
+  <!--p4 one-->
+       <article class="p4">
+         <!--2p 1-->
+        <section class="t1">
+          <section class="icon">
+            <i class="fas fa-globe-asia fa-2x"></i>
+          </section>
+        <section class="info3">
+            <h3>web Development</h3>
+            <p>Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services</p>
+        </section>
+        </section>
+          <!--2p 2-->
+        <section class="t1">
+          <section class="icon">
+            <i class="fas fa-pencil-alt fa-2x"></i>
+          </section>
+        <section class="info3">
+            <h3>Mobile Application Development</h3>
+            <p>Mobile application development is the process to making software for smartphones and digital assistants, most commonly for Android and iOS. The software can be preinstalled on the device, downloaded from a mobile app store or accessed through a mobile web browser.</p>
+        </section>
+        </section>
+       </article>
+
+     </section>
+     </section>
+   </article>
+ <!--end about-me-->
+
+ <!--start my skills-->
+  <article class="myskills">
+    <section class="info-myskills">
+      <h2>my skills</h2>
+      <p>python</p>
+      <p>web development</p>
+      <p>Mobile Application Development</p>
+      <button>contact me</button>
+    </section>
+    <section class="lang-skills">
+       <h4>web development</h4>
+       <section><span style="width:50%;">50%</span></section>
+       <h4>Mobile Application Development</h4>
+       <section><span style="width:40%;">40%</span></section>
+    </section>
+  </article>
+ <!--end my skills-->
+
+ 
+
+ <!--start testimonials-->
+  <article class="testimonials">
+    <section class="box-test">
+      <section class="my-education">
+        <h2>my education</h2>
+        <p>Bachelor of Engineering</p>
+        <p>  Sathyabama IST</p>
+        <p>  06/2019 - Present, Chennai, Tamil Nadu, India</p>
+        <p> Courses </p> 
+        <p> Computer Science
+</p>          
+      </section>
+      
+      </section>
+
+    </section>
+    <hr>
+    <section class="box-test">
+      <section class="my-education">
+        <h2>work experience</h2>
+        <p>Open source projects - python
+          LetsUpgrade
+          07/2020 - Present, Chennai
+          Achievements/Tasks
+          learned about python
+          created some python projects
+          Build With LetsUpgrade Website
+          @ Build With LetsUpgrade
+          </p>
+       </section>
+      </section>
+
+    </section>
+  </article>
+ <!--end testimonials-->
+
+
+ <!--start contact-me-->
+  <article class="contact-me">
+   <section class="info-contact">
+     <h3>contact me</h3>
+     <label><span>email :</span> omvivekk@gmail.com</label>
+     <label><span>phone :</span> 8688332442 </label>
+   </section>
+   <section class="in-form">
+    <form action="#" medhod="post">
+      <label>name *</label>
+      <input type="text" name="name" required="required">
+      <label>email *</label>
+      <input type="email" name="email" required="required">
+      <label>massage *</label>
+      <textarea></textarea>
+      <input type="submit" value="contact me">
+    </form>
+   </section>
+  </article>
+ <!--end contact-me-->
+ <!--start footer-->
+  <footer>
+    <p>copyright &copy;2020 om vivek</p>
+    <i class="fab fa-facebook-square fa-2x"></i>
+    <i class="fab fa-twitter-square fa-2x"></i>
+    <i class="fab fa-instagram fa-2x"></i>
+    <i class="fab fa-youtube fa-2x"></i>
+    <i class="fab fa-linkedin fa-2x"></i>
+
+  </footer>
+  </body>
+</html>
+
+    </body>
+</html>
